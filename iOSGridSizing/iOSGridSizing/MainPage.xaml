@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iOSGridSizing.MainPage">
+
+    <Grid RowDefinitions="*, 100">
+        <Border VerticalOptions="Center" HorizontalOptions="Center">
+            <Grid RowDefinitions="auto" ColumnDefinitions="auto">
+                <BoxView BackgroundColor="Red" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                <ScrollView>
+                    <StackLayout BackgroundColor="Yellow">
+                        <Label Text="This"/>
+                        <Label Text="is"/>
+                        <Label Text="a"/>
+                        <Label Text="StackLayout"/>
+                        <Label Text="content"/>
+                        <Label x:Name="variableLabel" WidthRequest="100" Text="Label with variable width"/>
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </Border>
+
+        <Button 
+            Grid.Row="1"
+            HorizontalOptions="Center" VerticalOptions="Center"
+            Text="Change size of the label in StackLayout"
+            Clicked="ButtonClicked"/>
+    </Grid>
+
+</ContentPage>
