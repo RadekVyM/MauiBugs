@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace iOSGridSizing;
+namespace iOSWrongSizing;
 
 public class Program
 {

@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace iOSGridSizing;
+namespace iOSWrongSizing;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

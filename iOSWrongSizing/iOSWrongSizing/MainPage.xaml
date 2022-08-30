@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iOSGridSizing.MainPage">
+             x:Class="iOSWrongSizing.MainPage">
 
+    <!-- 
+        Sizing is correct on Windows and Android but on iOS it is completely wrong, even if I remove the ScrollView (BoxView is not shrinking down)
+        If I remove the BoxView too, the required behavior is almost there but not entirely (height is not adjusting)
+    -->
     <Grid RowDefinitions="*, 100">
         <Border VerticalOptions="Center" HorizontalOptions="Center">
             <Grid RowDefinitions="auto" ColumnDefinitions="auto">

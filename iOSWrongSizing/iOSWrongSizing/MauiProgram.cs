@@ -1,4 +1,4 @@
-﻿namespace iOSGridSizing;
+﻿namespace iOSWrongSizing;
 
 public static class MauiProgram
 {
