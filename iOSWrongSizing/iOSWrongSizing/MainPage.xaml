@@ -10,7 +10,7 @@
     <Grid RowDefinitions="*, 100">
         <Border VerticalOptions="Center" HorizontalOptions="Center">
             <Grid RowDefinitions="auto" ColumnDefinitions="auto">
-                <BoxView BackgroundColor="Red" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+                <BoxView Color="Red" HorizontalOptions="Fill" VerticalOptions="Fill"/>
                 <ScrollView>
                     <StackLayout BackgroundColor="Yellow">
                         <Label Text="This"/>
