@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSMediaElement.Handler", "iOSMediaElement.Handler\iOSMediaElement.Handler.csproj", "{556F292A-C977-460E-89E2-932D8EEB62D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSMediaElement.ContentPage", "iOSMediaElement.ContentPage\iOSMediaElement.ContentPage.csproj", "{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSMediaElement.NavigationPage", "iOSMediaElement.NavigationPage\iOSMediaElement.NavigationPage.csproj", "{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSMediaElement.Shell", "iOSMediaElement.Shell\iOSMediaElement.Shell.csproj", "{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSMediaElement.SimpleShell", "iOSMediaElement.SimpleShell\iOSMediaElement.SimpleShell.csproj", "{00CDCB18-54EE-410E-A61F-8049B00BA331}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{556F292A-C977-460E-89E2-932D8EEB62D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{556F292A-C977-460E-89E2-932D8EEB62D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{556F292A-C977-460E-89E2-932D8EEB62D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{556F292A-C977-460E-89E2-932D8EEB62D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CA6C70-42A7-4B07-9A5F-84C8AF627654}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC1277A-F460-4D2C-87B8-1F1C3047F5B4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7C4638-16BD-4B9A-980D-15FF5A88AA33}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{00CDCB18-54EE-410E-A61F-8049B00BA331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CDCB18-54EE-410E-A61F-8049B00BA331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CDCB18-54EE-410E-A61F-8049B00BA331}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{00CDCB18-54EE-410E-A61F-8049B00BA331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CDCB18-54EE-410E-A61F-8049B00BA331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CDCB18-54EE-410E-A61F-8049B00BA331}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

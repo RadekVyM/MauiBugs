@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<simpleShell:SimpleShell
+    x:Class="iOSMediaElement.SimpleShell.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:iOSMediaElement.SimpleShell"
+    xmlns:simpleShell="clr-namespace:SimpleToolkit.SimpleShell;assembly=SimpleToolkit.SimpleShell"
+    
+    x:Name="thisShell"
+    
+    Background="White">
+
+    <Tab
+        Route="MainTab">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </Tab>
+
+    <simpleShell:SimpleShell.RootPageContainer>
+        <Grid
+            RowDefinitions="*, 50">
+            <simpleShell:SimpleNavigationHost/>
+            <HorizontalStackLayout
+                x:Name="tabBar"
+                Grid.Row="1"
+                Margin="20,5"
+                HorizontalOptions="Center" Spacing="10"
+                BindableLayout.ItemsSource="{Binding ShellContents, Source={x:Reference thisShell}}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate
+                        x:DataType="BaseShellItem">
+                        <Button
+                            Clicked="ShellItemButtonClicked"
+                            Background="Black"
+                            Text="{Binding Title}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+        </Grid>
+    </simpleShell:SimpleShell.RootPageContainer>
+
+    <simpleShell:SimpleShell.Content>
+        <Grid
+            RowDefinitions="50, *">
+            <Button
+                x:Name="backButton"
+                Clicked="BackButtonClicked"
+                Text="Back"
+                Margin="20,5"
+                HorizontalOptions="Start"
+                Background="Black"/>
+            <Label
+                Margin="20,5"
+                HorizontalOptions="Center" VerticalOptions="Center"
+                Text="{Binding CurrentShellContent.Title, Source={x:Reference thisShell}}"
+                FontAttributes="Bold" FontSize="18"/>
+            <simpleShell:SimpleNavigationHost
+                Grid.Row="1"/>
+        </Grid>
+    </simpleShell:SimpleShell.Content>
+
+</simpleShell:SimpleShell>
