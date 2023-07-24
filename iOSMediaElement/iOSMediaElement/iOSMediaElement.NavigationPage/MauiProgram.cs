@@ -18,7 +18,14 @@ namespace iOSMediaElement.NavigationPage
                 });
 
 #if DEBUG
-		builder.Logging.AddDebug();
+		    builder.Logging.AddDebug();
+#endif
+
+#if IOS || MACCATALYST
+            builder.ConfigureMauiHandlers(handlers =>
+            {
+                handlers.AddHandler<CommunityToolkit.Maui.Views.MediaElement, Handler.CustomMediaElementHandler>();
+            });
 #endif
 
             return builder.Build();

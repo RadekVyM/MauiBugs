@@ -20,5 +20,10 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void DetailPageButtonClicked(object sender, EventArgs e)
+        {
+            await AppShell.Current.GoToAsync(nameof(DetailPage));
+        }
     }
 }
